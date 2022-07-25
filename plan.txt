@@ -1,0 +1,121 @@
+============================================================
+game = '     |     |     \n  1  |  2  |  3  \n_____|_____|_____\n     |     |     \n  4  |  5  |  6  \n_____|_____|_____\n     |     |     \n  7  |  8  |  9  \n     |     |     \n'
+
+game_1 = '     |     |     \n  O  |  X  |  O  \n_____|_____|_____\n     |     |     \n  X  |  O  |  X  \n_____|_____|_____\n     |     |     \n  O  |  X  |  O  \n     |     |     \n'
+
+     |     |     \n
+  O  |  X  |  O  \n
+_____|_____|_____\n
+     |     |     \n
+  X  |  O  |  X  \n
+_____|_____|_____\n
+     |     |     \n
+  O  |  X  |  O  \n
+     |     |     \n
+	 
+     |     |     \n
+  1  |  2  |  3  \n
+_____|_____|_____\n
+     |     |     \n
+  4  |  5  |  6  \n
+_____|_____|_____\n
+     |     |     \n
+  7  |  8  |  9  \n
+     |     |     \n
+
+============================================================
+Synopsis:
+- introduction & welcome
+- instructions of the game (y/n)
+	- required number of players
+	- layout of the game
+- enter number of players
+	- if 1: human vs computer
+	- if 2: human vs human
+- enter player names
+	- if 1: enter one name
+	- if 2: enter two names
+	- full = False, win = False
+	- score_player_1 = 0, score_player_2 = 0, total_scores = 0, num_of_play = 0
+- while (win != True or full != True) loop:
+	- layout
+	- check for wins, wins = True, score_player_2 += 1, total += 1, break
+	- check for full, full = True, break
+	- turn of a player
+- when while breaks
+	- wins: declare winner
+	- full: its a draw
+	- full layout: declare full layout
+- ask for restart:
+	- yes:
+		- full = False
+		- win = False
+		- make a full list of numbers from 1 to 9
+		- go to while() loop
+	- no:
+		- check that (total = score_player_1 + score_player_2)
+		- save scoresheet to file
+		- format
+
+============================================================
+- conditions for stop
+	- when a player wins (win = True)
+	- when no player wins and layout is full (full = True)
+	-
+
+============================================================
+if 'O' in layout[one] and 'O' in layout[two] and 'O' in layout[thr]: player_1 += 1; win = True
+if 'X' in layout[fou] and 'X' in layout[fiv] and 'X' in layout[six]: player_2 += 1; win = True
+
+1 2 3
+4 5 6
+7 8 9
+1 4 7
+2 5 8
+3 6 9
+1 5 9
+3 5 7
+
+one = a.find('1')
+two = a.find('2')
+thr = a.find('3')
+fou = a.find('4')
+fiv = a.find('5')
+six = a.find('6')
+sev = a.find('7')
+eig = a.find('8')
+nin = a.find('9')
+
+============================================================
+HTML file:
+- title
+- table for scoresheet
+- background
+
+  Name of Player_1 	| Name of Player_2 	| Score of Player_1 |   Score of Player_2 	| 		Draws		|	Total Gameplay | 	Difficulty		|	  Timestamp		|
+
+============================================================
+
+- intro
+- instructions
+- player_info
+- iteration
+- layout
+- insert_num
+- check_for_wins_1
+- check_for_wins_2
+- conc
+- gameplay
+
+=============================================================
+- Computer algorithm:
+	- Minimax 
+		- https://en.wikipedia.org/wiki/Minimax, 
+		- https://www.neverstopbuilding.com/blog/minimax
+		- https://levelup.gitconnected.com/mastering-tic-tac-toe-with-minimax-algorithm-3394d65fa88f
+- Using Pygame:
+	- crash course
+		- https://www.youtube.com/watch?v=FfWpgLFMI7w - Pygame Tutorial for Beginners - Python Game Development Course
+
+=============================================================
+<iframe src = "ticky.txt" height = "300", width = "1500"> This is new </iframe>
