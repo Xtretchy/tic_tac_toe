@@ -1,7 +1,9 @@
 # tic_tac_toe
 A python program for a tic-tac-toe game
+
 * * *
-https://raw.githubusercontent.com/Xtretchy/tic_tac_toe/main/resources/gameplay.png
+<img src = "https://raw.githubusercontent.com/Xtretchy/tic_tac_toe/main/resources/gameplay.png">
+
 * * *
 I was a student of the first installment of the ReDI Hamburg School of Digital Integration course. The program was a huge success, and towards completion, students were allowed to form groups and come up with a project plan.
 
